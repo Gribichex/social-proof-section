@@ -1,0 +1,102 @@
+/* broad properties */
+
+html {
+  margin: auto;
+  max-width: 1440px;
+}
+
+body {
+  background-image: url("../images/bg-pattern-top-desktop.svg"), url("../images/bg-pattern-bottom-desktop.svg");
+  font-family: "Spartan", sans-serif;
+  margin: 7% 15%;
+}
+
+/* titles and font styles*/
+
+.p {
+  font-size: 15px;
+}
+
+/* containers */
+
+.container {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
+
+/* sections */
+
+/*assessment section */
+
+/*assessment*/
+
+.main-claim {
+  flex-basis: 50%;
+}
+
+.claim-title {
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+  font-size: 45px;
+  width: 70%;
+  margin: 0;
+}
+
+.claim-paragraph {
+  color: hsl(303, 10%, 53%);
+  font-weight: 400;
+  width: 90%;
+}
+
+/*ratings*/
+
+.rating-row {
+  background-color: hsl(300, 24%, 96%);
+  color: hsl(300, 43%, 22%);
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 5%;
+  width: 100%;
+}
+
+#row-one {
+  margin: 5% 10%;
+}
+
+#row-two {
+  margin: 5% 20%;
+}
+
+#row-three {
+  margin: 5% 30%;
+}
+
+/* Testimonials */
+
+.customer-card {
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 10px;
+  color: hsl(300, 24%, 96%);
+  /*margin:  5% 1%;*/
+  width: 30%;
+  padding: 4% 3%;
+}
+
+.customer-status {
+  color: hsl(333, 80%, 67%);
+}
+
+.customer-img{
+    border-radius: 100%;
+    width: 30px;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  body {
+    background-image: url("../images/bg-pattern-top-mobile.svg");
+  }
+}
