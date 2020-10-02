@@ -6,15 +6,20 @@ html {
 }
 
 body {
-  background-image: url("../images/bg-pattern-top-desktop.svg"), url("../images/bg-pattern-bottom-desktop.svg");
+  background-image: url("../images/bg-pattern-top-desktop.svg"),
+    url("../images/bg-pattern-bottom-desktop.svg");
+  background-position: top, bottom;
+  background-repeat: no-repeat, no-repeat;
   font-family: "Spartan", sans-serif;
-  margin: 7% 15%;
+  margin: 7% 11.3%;
 }
 
 /* titles and font styles*/
 
-.p {
-  font-size: 15px;
+p {
+
+  font-weight: 400;
+  line-height: 1.4rem;
 }
 
 /* containers */
@@ -22,12 +27,12 @@ body {
 .container {
   display: flex;
   flex-direction: row;
-  text-align: left;
+  justify-content: space-between;
 }
 
 /* sections */
 
-/*assessment section */
+/*****************assessment section ************************/
 
 /*assessment*/
 
@@ -46,53 +51,99 @@ body {
 .claim-paragraph {
   color: hsl(303, 10%, 53%);
   font-weight: 400;
-  width: 90%;
 }
 
 /*ratings*/
 
+.ratings {
+  flex-basis: 50%;
+  text-align: left;
+}
+
 .rating-row {
   background-color: hsl(300, 24%, 96%);
+  font-weight: 700;
   color: hsl(300, 43%, 22%);
-  font-weight: 500;
   border-radius: 10px;
-  padding: 5%;
-  width: 100%;
+  padding: 2.5%;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  justify-content: space-around;
 }
 
 #row-one {
-  margin: 5% 10%;
+  margin-left: 0%;
+  margin-right: 20%;
 }
 
 #row-two {
-  margin: 5% 20%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 #row-three {
-  margin: 5% 30%;
+  margin-left: 20%;
+  margin-right: 0%;
 }
 
-/* Testimonials */
+.rating-star {
+  padding-left: 1px;
+  padding-right: 1px;
+}
+
+/********** Testimonials section************************/
+
+#testimonials{
+  padding-top: 5%;
+}
 
 .customer-card {
   background-color: hsl(300, 43%, 22%);
   border-radius: 10px;
   color: hsl(300, 24%, 96%);
-  /*margin:  5% 1%;*/
-  width: 30%;
+  box-sizing: border-box;
+  width: 350px;
+  height: 234px;
   padding: 4% 3%;
+}
+
+.customer {
+  justify-content: left;
+}
+
+.customer-details {
+  padding-left: 5%;
 }
 
 .customer-status {
   color: hsl(333, 80%, 67%);
+  margin: 0;
 }
 
-.customer-img{
-    border-radius: 100%;
-    width: 30px;
+.customer-img {
+  border-radius: 100%;
+  width: 2.1em;
+  height: 2.1em;
 }
 
 
+.customer-comment {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+
+
+#card-two {
+  margin-top: 2%;
+}
+
+#card-three {
+  margin-top: 4%;
+}
+
+/************Responsive**********************************/
 
 
 @media screen and (max-width: 768px) {
