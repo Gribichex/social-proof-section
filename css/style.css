@@ -66,6 +66,13 @@ p {
   margin-top: 2.5%;
   margin-bottom: 2.5%;
   justify-content: space-around;
+  align-items:center;
+}
+
+.star-row{
+  min-width:120px; 
+  display: flex;
+  align-items:center;
 }
 
 #row-one {
@@ -138,6 +145,10 @@ p {
   margin-top: 4%;
 }
 
+.attribution{
+  padding-top: 5%;
+}
+
 /************Responsive properties**********************************/
 
 @media screen and (max-width: 768px) {
@@ -154,6 +165,10 @@ p {
     flex-direction: column;
     text-align: center;
     justify-content: space-between;
+  }
+
+  .star-row{
+padding-bottom:2% ;
   }
 
   #row-one {
