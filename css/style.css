@@ -1,4 +1,4 @@
-/* broad properties */
+/**************** broad properties ********************************/
 
 html {
   margin: auto;
@@ -11,7 +11,7 @@ body {
   background-position: top, bottom;
   background-repeat: no-repeat, no-repeat;
   font-family: "Spartan", sans-serif;
-  margin: 7% 11.3%;
+  margin: 14.5% 11.5% 11.5%;
 }
 
 /* titles and font styles*/
@@ -29,11 +29,9 @@ p {
   justify-content: space-between;
 }
 
-/* sections */
+/*****************assessment section ******************************/
 
-/*****************assessment section ************************/
-
-/*assessment*/
+/*main title and text*/
 
 .main-claim {
   flex-basis: 50%;
@@ -103,7 +101,7 @@ p {
   box-sizing: border-box;
   max-width: 350px;
   height: 234px;
-  padding: 4% 3%;
+  padding: 25px 25px;
 }
 
 .customer {
@@ -139,7 +137,7 @@ p {
   margin-top: 4%;
 }
 
-/************Responsive**********************************/
+/************Responsive properties**********************************/
 
 @media screen and (max-width: 768px) {
   body {
@@ -147,36 +145,43 @@ p {
       url("../images/bg-pattern-bottom-mobile.svg");
     background-position: top, bottom;
     background-repeat: no-repeat, no-repeat;
+    margin: 7%;
   }
 
   .container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     text-align: center;
+    justify-content: space-between;
   }
 
   #row-one {
-    margin: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
   }
 
   #row-two {
-    margin: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
   }
 
   #row-three {
-    margin: 0%;
-  }
-  .main-claim {
-    text-align: center;
+    margin-left: 0%;
+    margin-right: 0%;
   }
 
   .claim-title {
     width: auto;
   }
-
+  
   .customer.container {
     flex-direction: row;
     justify-content: left;
+    text-align: left;
   }
+
+  .customer-comment {
+    text-align: left;
+  }
+
 }
